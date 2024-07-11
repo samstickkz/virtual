@@ -10,47 +10,43 @@ const Hero = () => {
           {""} for <br /> developers
         </span>
       </h1>
+      <p className="mt-10 text-lg text-center text-neutral-500 max-w-4xl">
+        {" "}
+        Exercitation quis amet pariatur excepteur sunt id id amet eiusmod aute
+        velit incididunt enim nisi. Magna consequat excepteur proident esse
+        aliqua et id. Voluptate dolore adipisicing
+      </p>
+      <div className="flex justify-center my-10">
+        <a
+          href="#"
+          className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md"
+        >
+          {" "}
+          start for free
+        </a>
+        <a href="#" className="py-3 px-4 mx-3 rounded-md border">
+          {" "}
+          documentation
+        </a>
+      </div>
+
+      <div className="flex mt-10 justify-center">
+        <video
+          className="rounded-lg w-1/2 border border-orange-700 shadow-orange-400 mx-2 my-4"
+          src={video1}
+          autoPlay
+          loop
+          muted
+        ></video>
+        <video
+          className="rounded-lg w-1/2 border border-orange-700 shadow-orange-400 mx-2 my-4"
+          src={video2}
+          autoPlay
+          loop
+          muted
+        ></video>
+      </div>
     </div>
-    // <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-    //   <div className="relative">
-    //     <video
-    //       className="w-full h-full object-cover"
-    //       src={video1}
-    //       autoPlay
-    //       loop
-    //       muted
-    //     ></video>
-    //     <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/0 to-neutral-900/100 flex items-center justify-center">
-    //       <div className="text-center">
-    //         <h1 className="text-4xl md:text-6xl text-white font-bold">
-    //           Virtual Sam
-    //         </h1>
-    //         <p className="text-white text-lg md:text-xl">
-    //           Your personal assistant
-    //         </p>
-    //       </div>
-    //     </div>
-    //   </div>
-    //   <div className="relative">
-    //     <video
-    //       className="w-full h-full object-cover"
-    //       src={video2}
-    //       autoPlay
-    //       loop
-    //       muted
-    //     ></video>
-    //     <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/0 to-neutral-900/100 flex items-center justify-center">
-    //       <div className="text-center">
-    //         <h1 className="text-4xl md:text-6xl text-white font-bold">
-    //           Virtual Sam
-    //         </h1>
-    //         <p className="text-white text-lg md:text-xl">
-    //           Your personal assistant
-    //         </p>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
   );
 };
 
