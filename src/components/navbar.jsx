@@ -1,6 +1,13 @@
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
 import logo from "./../assets/logo.png";
 import { navItems } from "../constants";
 const Navbar = () => {
+  const [mobileDrawerOpen, setmobileDrawerOpen] = useState(false);
+  const toggleNavbar = () => {
+    setmobileDrawerOpen(!mobileDrawerOpen);
+  };
+
   return (
     <nav className="sticky top-0 z-50 py-3 backdrop-blur-Lg border-b border-neutral-700/800">
       <div className="container px-4 mx-auto relative text-sm">
@@ -26,6 +33,11 @@ const Navbar = () => {
             >
               Create an Account
             </a>
+          </div>
+          <div className="lg:hidden md:flex flex-col justify-end ">
+            <button onClick={toggleNavbar}>
+              {mobileDrawerOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
           </div>
         </div>
       </div>
