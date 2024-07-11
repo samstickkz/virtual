@@ -36,10 +36,32 @@ const Navbar = () => {
           </div>
           <div className="lg:hidden md:flex flex-col justify-end ">
             <button onClick={toggleNavbar}>
-              {mobileDrawerOpen ? <X size={24} /> : <Menu size={24} />}
+              {mobileDrawerOpen ? <X /> : <Menu />}
             </button>
           </div>
         </div>
+        {mobileDrawerOpen && (
+          <div className="lg:hidden flex flex-col fixed right-0 z-20 bg-neutral-900 w-full p-12 justify-center items-center ">
+            <ul>
+              {navItems.map((items, index) => (
+                <li key={index} className="py-4">
+                  <a href={items.href}>{items.label}</a>
+                </li>
+              ))}
+            </ul>
+            <div className="items-center justify-center space-x-4 mt-8">
+              <a href="#" className="py-2 px-3 border rounded-md">
+                Sign in
+              </a>
+              <a
+                href="#"
+                className="py-2 px-3 border rounded-md bg-gradient-to-r from-orange-500 to-orange-800"
+              >
+                Create an Account
+              </a>
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   );
