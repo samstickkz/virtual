@@ -22,13 +22,17 @@ const Feature = () => {
             key={index}
             className="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 px-4 py-6"
           >
-            <div className="flex items-center">
-              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-neutral-900 text-orange-500 ">
+            <div className="flex ">
+              <div className="flex mx-6 items-center justify-center w-10 h-10 rounded-full bg-neutral-900 text-orange-500 ">
                 {feature.icon}
               </div>
-              <h3 className="text-lg font-medium ml-4">{feature.title}</h3>
+              <div>
+                <h5 className="mt-1 mb-6 text-xl"> {feature.text}</h5>
+                <p className="text-md p-2 mb-20 text-neutral-500">
+                  {feature.description}
+                </p>
+              </div>
             </div>
-            <p className="mt-4 text-neutral-500">{feature.description}</p>
           </div>
         ))}
       </div>
