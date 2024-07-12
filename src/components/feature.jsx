@@ -22,7 +22,7 @@ const Feature = () => {
             key={index}
             className="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 px-4 py-6"
           >
-            <div className="flex ">
+            <div className="flex  ">
               <div className="flex mx-6 items-center justify-center w-10 h-10 rounded-full bg-neutral-900 text-orange-500 ">
                 {feature.icon}
               </div>
