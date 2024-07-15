@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Price from "./components/Price";
 import Testimonials from "./components/Testimonials";
 import Workflow from "./components/Workflow";
@@ -15,6 +16,7 @@ const App = () => {
         <Workflow />
         <Price />
         <Testimonials />
+        <Footer />
       </div>
     </>
   );
