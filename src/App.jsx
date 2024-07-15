@@ -1,3 +1,4 @@
+import Price from "./components/Price";
 import Workflow from "./components/Workflow";
 import Feature from "./components/feature";
 import Hero from "./components/hero";
@@ -11,6 +12,7 @@ const App = () => {
         <Hero />
         <Feature />
         <Workflow />
+        <Price />
       </div>
     </>
   );
